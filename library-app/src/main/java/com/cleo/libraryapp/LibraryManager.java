@@ -1,5 +1,8 @@
 package com.cleo.libraryapp;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LibraryManager {
     // Property
     private List<Book> books;
@@ -47,5 +50,9 @@ public class LibraryManager {
             book.displayBookInfo();
             System.out.println();
         }
+    }
+
+    public List<Book> getAllBooks() {
+        return new ArrayList<>(books);
     }
 }
